@@ -12,5 +12,12 @@ namespace Rock.Controllers
       {
         return View();
       }
+
+      [HttpPost("/winner")]
+      public ActionResult Winner()
+      {
+        Game newGame = new Game(Request.Form["player1"], Request.Form["player2"]);
+        return View("Winner", newGame.SelectWinner());
+      }
     }
 }

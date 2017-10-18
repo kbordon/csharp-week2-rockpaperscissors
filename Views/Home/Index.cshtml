@@ -1,13 +1,19 @@
 @{
   Layout = "_Layout";
 }
+
 <div class="container">
   <div class="row">
     <div class="col-md-6">
       <form action="/winner" method="post">
         <div class="container" id="player1-box">
           <label for="player1">Player 1 Go!</label>
-          <div class="radio">
+          <select class="form-control" name="player1" id="player1">
+            <option>rock</option>
+            <option>paper</option>
+            <option>scissors</option>
+          </select>
+          @* <div class="radio">
             <label>
               <input type="radio" name="player1" value="rock" checked>
               Rock (insert rock image)
@@ -24,7 +30,7 @@
               <input type="radio" name="player1" value="paper">
               Paper
             </label>
-          </div>
+          </div> *@
           <div class="form-group">
             <button type="button" class="btn" id="player1-chooses">Select</button>
           </div>
@@ -33,7 +39,12 @@
       <div class="col-md-6">
         <div class="container" id="player2-box">
           <label for="player2">Player 2 Go!</label>
-          <div class="radio">
+          <select class="form-control" id="player2" name="player2">
+            <option>rock</option>
+            <option>paper</option>
+            <option>scissors</option>
+          </select>
+          @* <div class="radio">
             <label>
               <input type="radio" name="player2" value="rock" checked>
               Rock (insert rock image)
@@ -50,7 +61,7 @@
               <input type="radio" name="player2" value="paper">
               Paper
             </label>
-          </div>
+          </div> *@
           <div class="form-group">
             <button type="submit" class="btn">Play!</button>
           </div>
