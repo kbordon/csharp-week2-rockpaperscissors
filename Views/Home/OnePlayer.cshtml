@@ -1,0 +1,21 @@
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+  <form action="/players/result" method="post">
+      <div class="form-group">
+        <div class="well" id="opaque"><label for="player1">Player 1 Go!</label></div>
+        <select class="form-control input-lg" name="player1" id="player1">
+          <option class="bg-success">rock</option>
+          <option>paper</option>
+          <option>scissors</option>
+        </select>
+        <input type="hidden" value="computer" name="player2">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn-lg btn-custom">Play!</button>
+      </div>
+
+      <a href="/"><span class="text-link">Home</span></a>
+  </form>

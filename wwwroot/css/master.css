@@ -1,7 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
 body {
   font-family: sans-serif;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 30px;
 }
 
+.index-box {
+  width: 500px;
+}
+#opaque {
+  text-align: center;
+  background-color: rgba(235, 235, 224, 0.5);
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+#opaque h1{
+  font-family: 'Amatic SC', cursive;
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-shadow: 3px 2px 6px #5d5d3c;
+}
+
+.btn-custom {
+  background-color: #ebebe0;
+}
+
+.text-link {
+  color: white;
+  font-weight: bolder;
+}
 #player2-box {
   display: none;
 }

@@ -2,5 +2,7 @@
   Layout = "_Layout";
 }
 
-<h1>The winner is: @Model!</h1>
+<h1>The winner is: @Model.SelectWinner()!</h1>
+<h3>Player one chose @Model.GetPlayer1().</h3>
+<h3>Player two chose @Model.GetPlayer2().</h3>
 <a href="/">Play Again?</a>
